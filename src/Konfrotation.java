@@ -6,16 +6,17 @@ public class Konfrotation {
     private String antagonist;
     private String ort;
     private String date;
-    private int globalerEinfluss;
-    public Konfrotation(int id, String held, String antagonist, String ort,String date, int globalerEinfluss) {
+    String konfrontationsTyp;
+    private double globalerEinfluss;
+    public Konfrotation(int id, String held, String antagonist, String ort,String date,String konfrontationsTyp, double globalerEinfluss) {
         this.id = id;
         this.held = held;
         this.antagonist = antagonist;
         this.ort = ort;
         this.date = date;
+        this.konfrontationsTyp = konfrontationsTyp;
         this.globalerEinfluss = globalerEinfluss;
     }
-    public Konfrotation() {}
 
     public int getId() {
         return id;
@@ -57,12 +58,20 @@ public class Konfrotation {
         this.date = date;
     }
 
-    public int getGlobalerEinfluss() {
+    public double getGlobalerEinfluss() {
         return globalerEinfluss;
     }
 
-    public void setGlobalerEinfluss(int globalerEinfluss) {
+    public void setGlobalerEinfluss(double globalerEinfluss) {
         this.globalerEinfluss = globalerEinfluss;
+    }
+
+    public String getKonfrontationsTyp() {
+        return konfrontationsTyp;
+    }
+
+    public void setKonfrontationsTyp(String konfrontationsTyp) {
+        this.konfrontationsTyp = konfrontationsTyp;
     }
 
     @Override

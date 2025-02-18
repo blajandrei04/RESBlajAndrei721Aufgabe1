@@ -14,15 +14,16 @@ public class CsvParser {
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\t");
 
-                if (parts.length < 7) continue;
+                if (parts.length < 6) continue;
 
                 cases.add(new Konfrotation(
                         Integer.parseInt(parts[0]),
                         parts[1],
                         parts[2],
+                        parts[3],
                         parts[4],
                         parts[5],
-                        Integer.parseInt(parts[6])
+                        Double.parseDouble(parts[6])
                 ));
             }
         } catch (IOException e) {
