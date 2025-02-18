@@ -15,5 +15,4 @@ public class KonfrontationAnalysis {
                 .filter(spiel -> spiel.getGlobalerEinfluss() >= minCapacity)
                 .forEach(System.out::println);
     }
-
 }
