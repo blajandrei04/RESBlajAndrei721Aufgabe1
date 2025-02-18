@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="commons-csv-1.10.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Jars/commons-csv-1.10.0.jar!/" />
+      <root url="jar://$USER_HOME$/Jars/jackson-annotations-2.18.2.jar!/" />
+      <root url="jar://$USER_HOME$/Jars/jackson-core-2.18.2.jar!/" />
+      <root url="jar://$USER_HOME$/Jars/jackson-databind-2.18.2.jar!/" />
+      <root url="jar://$USER_HOME$/Jars/jackson-dataformat-xml-2.18.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Jars/woodstox-core-asl-4.4.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
