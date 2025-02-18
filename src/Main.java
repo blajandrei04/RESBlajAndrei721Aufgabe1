@@ -12,8 +12,8 @@ public class Main {
         System.out.print("Geben Sie einen Zahl für die minimumEinfluss ein: ");
         char initial = scanner.nextLine().charAt(0);
         analysis.filterByCapacity(initial);
-//        System.out.println("\nGalaktische Konfrontationen':");
-//        analysis.displayFeverCases();
+        System.out.println("\nGalaktische Konfrontationen':");
+        analysis.displayFeverCases();
 
         System.out.println("Analyse abgeschlossen.");
     }

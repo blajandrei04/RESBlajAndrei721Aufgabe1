@@ -15,4 +15,10 @@ public class KonfrontationAnalysis {
                 .filter(spiel -> spiel.getGlobalerEinfluss() >= minCapacity)
                 .forEach(System.out::println);
     }
+    public void displayFeverCases() {
+        cases.stream()
+                .filter(c -> c.getKonfrontationsTyp().equalsIgnoreCase("Galaktisch"))
+                .sorted(Comparator.comparing(Konfrotation::getDate).reversed())
+                .forEach(System.out::println);
+    }
 }
